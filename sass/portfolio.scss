@@ -6,13 +6,13 @@
 @import "components/container";
 @import "components/logo";
 @import "components/button";
-@import "components/section";
 @import "components/social-links";
 @import "components/title-uppercase";
 
-@import "components/header";
-@import "components/address";
-@import "components/navigation";
-@import "components/filter";
-@import "components/footer";
+@import "layout/section";
+@import "layout/header";
+@import "layout/address";
+@import "layout/navigation";
+@import "layout/filter";
+@import "layout/footer";
 @import "components/form-footer";
