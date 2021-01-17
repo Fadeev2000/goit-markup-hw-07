@@ -20,8 +20,7 @@
   flex-basis: calc(100% / 3 - 30px);
 
   box-shadow: 0;
-  transition: box-shadow var(--transition-duration)
-    var(--transition-timing-function);
+  transition: box-shadow $transition-duration $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -54,8 +53,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(0%);
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+  transition: transform $transition-duration $transition-timing-function;
 }
 
 .filter__project-link:hover .filter__project-overlay,
@@ -67,11 +65,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 }
 
 .filter__project-title {
-  color: var(--add-color-text);
+  color: $add-color-text;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -80,7 +78,7 @@
 }
 
 .filter__project-text {
-  color: var(--main-color-text);
+  color: $main-color-text;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;

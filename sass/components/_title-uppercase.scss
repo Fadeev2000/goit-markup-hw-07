@@ -9,11 +9,11 @@
 .title-uppercase-features {
   @extend %title-uppercase;
   margin-bottom: 10px;
-  color: var(--add-color-text);
+  color: $add-color-text;
 }
 
 .title-uppercase-projects,
 .title-uppercase-footer {
   @extend %title-uppercase;
-  color: var(--main-bg-color);
+  color: $main-bg-color;
 }

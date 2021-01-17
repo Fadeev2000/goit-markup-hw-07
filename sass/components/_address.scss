@@ -33,23 +33,22 @@
     display: flex;
     align-items: center;
 
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: color $transition-duration $transition-timing-function;
   }
   &__link--header {
-    color: var(--add-color-text);
+    color: $add-color-text;
   }
 
   &__link--footer-white {
-    color: var(--main-bg-color);
+    color: $main-bg-color;
   }
   &__link--footer-grey {
-    color: var(--exception-color);
+    color: $exception-color;
   }
 
   &__link:hover,
   &__link:focus {
-    color: var(--accent-color-text);
+    color: $accent-color-text;
   }
 
   &__svg {

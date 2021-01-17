@@ -8,8 +8,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity var(--transition-duration)
-    var(--transition-timing-function);
+  transition: opacity $transition-duration $transition-timing-function;
 }
 
 .is-hidden {
@@ -28,14 +27,13 @@
   padding: 40px;
   min-height: 581px;
   min-width: 528px;
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+  transition: transform $transition-duration $transition-timing-function;
 
   &__button-close {
     display: flex;
@@ -46,7 +44,7 @@
     right: 8px;
     height: 30px;
     width: 30px;
-    background: var(--main-bg-color);
+    background: $main-bg-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -57,12 +55,11 @@
     height: 11px;
     fill: #000;
 
-    transition: fill var(--transition-duration)
-      var(--transition-timing-function);
+    transition: fill $transition-duration $transition-timing-function;
   }
 
   &__button-close:hover &__svg-close {
-    fill: var(--accent-color-text);
+    fill: $accent-color-text;
   }
 
   &__text {
@@ -70,6 +67,6 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 1.17;
-    color: var(--add-color-text);
+    color: $add-color-text;
   }
 }

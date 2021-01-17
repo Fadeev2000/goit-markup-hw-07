@@ -22,8 +22,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    transition: border var(--transition-duration)
-      var(--transition-timing-function);
+    transition: border $transition-duration $transition-timing-function;
   }
 
   &__svg-field {
@@ -33,21 +32,20 @@
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
-    fill: var(--add-color-text);
+    fill: $add-color-text;
 
-    transition: fill var(--transition-duration)
-      var(--transition-timing-function);
+    transition: fill $transition-duration $transition-timing-function;
   }
 
   &__field:hover,
   &__field:focus {
     outline: none;
-    border: 1px solid var(--accent-color-text);
+    border: 1px solid $accent-color-text;
   }
 
   &__field:hover + &__svg-field,
   &__field:focus + &__svg-field {
-    fill: var(--accent-color-text);
+    fill: $accent-color-text;
   }
 
   &__field--textarea {
@@ -63,13 +61,12 @@
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
 
-      transition: color var(--transition-duration)
-        var(--transition-timing-function);
+      transition: color $transition-duration $transition-timing-function;
     }
 
     &:hover::placeholder,
     &:focus::placeholder {
-      color: var(--accent-color-text);
+      color: $accent-color-text;
     }
   }
 
@@ -91,11 +88,11 @@
     margin-right: 7px;
     width: 16px;
     height: 15px;
-    border: 1px solid var(--add-color-text);
+    border: 1px solid $add-color-text;
   }
 
   &__link-contract {
-    color: var(--accent-color-text);
+    color: $accent-color-text;
     text-decoration: underline;
     text-decoration-skip-ink: none;
   }

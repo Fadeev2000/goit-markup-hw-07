@@ -15,23 +15,21 @@
     outline: none;
     color: rgba(255, 255, 255, 0.6);
 
-    transition: border var(--transition-duration)
-      var(--transition-timing-function);
+    transition: border $transition-duration $transition-timing-function;
   }
 
   &__field:focus {
-    border: 1px solid var(--accent-color-text);
+    border: 1px solid $accent-color-text;
   }
 
   &__field::placeholder {
     color: rgba(255, 255, 255, 0.6);
 
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: color $transition-duration $transition-timing-function;
   }
 
   &__field:hover::placeholder,
   &__field:focus::placeholder {
-    color: var(--accent-color-text);
+    color: $accent-color-text;
   }
 }

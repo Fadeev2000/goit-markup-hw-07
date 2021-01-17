@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  background-color: var(--main-bg-color);
-  color: var(--main-color-text);
+  background-color: $main-bg-color;
+  color: $main-color-text;
 
   font-family: Roboto, sans-serif;
   font-style: normal;

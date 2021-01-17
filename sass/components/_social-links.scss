@@ -24,9 +24,9 @@
     height: 44px;
     border-radius: 50%;
 
-    background-color: var(--main-bg-color);
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
+    background-color: $main-bg-color;
+    transition: background-color $transition-duration
+      $transition-timing-function;
   }
 
   &__icon {
@@ -34,28 +34,27 @@
     height: 20px;
     fill: #afb1b8;
 
-    transition: fill var(--transition-duration)
-      var(--transition-timing-function);
+    transition: fill $transition-duration $transition-timing-function;
   }
 
   &__link:hover,
   &__link:focus {
-    background-color: var(--accent-color-text);
+    background-color: $accent-color-text;
   }
 
   &__link:hover &__icon,
   &__link:focus &__icon {
-    fill: var(--main-bg-color);
+    fill: $main-bg-color;
   }
 
   &__icon--white-icon {
-    fill: var(--main-bg-color);
+    fill: $main-bg-color;
   }
 
   &__link--transparent-bg {
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: background-color $transition-duration
+      $transition-timing-function;
   }
 }

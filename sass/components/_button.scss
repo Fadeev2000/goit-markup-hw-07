@@ -12,12 +12,11 @@
   cursor: pointer;
 
   box-shadow: 0;
-  color: var(--add-color-text);
-  background-color: var(--add-bg-color);
-  transition: background-color var(--transition-duration)
-      var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function),
-    box-shadow var(--transition-duration) var(--transition-timing-function);
+  color: $add-color-text;
+  background-color: $add-bg-color;
+  transition: background-color $transition-duration $transition-timing-function,
+    color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
 
   &--order-button {
     display: inline-flex;
@@ -28,8 +27,8 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 4px;
-    color: var(--main-bg-color);
-    background-color: var(--accent-color-text);
+    color: $main-bg-color;
+    background-color: $accent-color-text;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -38,15 +37,15 @@
   &--active,
   &:hover,
   &:focus {
-    color: var(--main-bg-color);
-    background-color: var(--accent-color-text);
+    color: $main-bg-color;
+    background-color: $accent-color-text;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   &--not-active {
-    color: var(--add-color-text);
-    background-color: var(--add-bg-color);
+    color: $add-color-text;
+    background-color: $add-bg-color;
   }
 
   &__svg--right {
@@ -54,6 +53,6 @@
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    fill: var(--main-bg-color);
+    fill: $main-bg-color;
   }
 }

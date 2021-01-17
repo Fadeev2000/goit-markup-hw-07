@@ -19,16 +19,15 @@
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--add-color-text);
+    color: $add-color-text;
 
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: color $transition-duration $transition-timing-function;
   }
 
   &__link:hover,
   &__link:focus,
   &__link--current {
-    color: var(--accent-color-text);
+    color: $accent-color-text;
   }
 
   &__link--current::after {
@@ -40,7 +39,7 @@
     height: 4px;
     width: 100%;
     border-radius: 2px;
-    background-color: var(--accent-color-text);
-    background-image: linear-gradient(to right, var(--accent-color-text));
+    background-color: $accent-color-text;
+    background-image: linear-gradient(to right, $accent-color-text);
   }
 }
